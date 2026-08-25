@@ -1,0 +1,10 @@
+name: 05-missing-info
+dod: "5 — missing info → LOW confidence, no invented answer"
+transcript:
+  - { channel: them, speaker: David, text: "What was the F1 on the held-out clinical subset?" }
+expect:
+  card: true
+  confidence_any: [low]
+  say_not_matches: ["0\\.\\d{2}"]
+  say_contains_any: ["not sure", "don't have", "double-check", "check", "verify", "confirm"]
+real_only: [confidence_any, say_not_matches, say_contains_any]

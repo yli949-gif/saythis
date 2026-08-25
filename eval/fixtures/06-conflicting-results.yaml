@@ -1,0 +1,10 @@
+name: 06-conflicting-results
+dod: "6 — conflicting sources are surfaced, not silently resolved"
+transcript:
+  - { channel: them, speaker: David, text: "What F1 are we reporting for Idea 7?" }
+expect:
+  card: true
+  conflict: true
+  sources_any: [evaluation_results]
+  say_contains_any: ["0.68", "0.71", "v3", "latest", "recent"]
+real_only: [say_contains_any]

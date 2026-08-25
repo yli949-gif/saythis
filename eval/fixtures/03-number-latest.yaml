@@ -1,0 +1,10 @@
+name: 03-number-latest
+dod: "3 — exact number/version query retrieves the correct file"
+transcript:
+  - { channel: them, speaker: David, text: "What's the F1 for Idea 12 in the latest run?" }
+expect:
+  card: true
+  sources_any: [evaluation_results_v3, experiment_notes]
+  say_contains_any: ["0.68"]
+  say_not_contains: ["0.66"]
+real_only: [say_not_contains]

@@ -1,0 +1,12 @@
+name: 01-direct-question
+dod: "1 — direct project question → correct grounded answer"
+transcript:
+  - { channel: them, speaker: David, text: "Okay, quick check on the eval setup before we move on." }
+  - { channel: them, speaker: David, text: "Ella, why did you use micro F1 here?" }
+expect:
+  card: true
+  is_question_for_user: true
+  sources_any: [evaluation_plan, meeting_notes, "(current meeting)"]
+  confidence_any: [high, medium]
+  say_contains_any: [micro, aggregate, support, macro]
+real_only: [say_contains_any, confidence_any]

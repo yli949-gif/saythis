@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.saythis/
+eval/report-*.json
+*.pem
+*.key
+*secret*
+*credential*

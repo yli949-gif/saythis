@@ -1,0 +1,10 @@
+name: 04-unfinished-work
+dod: "4 — distinguishes done vs not done"
+transcript:
+  - { channel: them, speaker: David, text: "Have you already run the five-trial evaluation?" }
+expect:
+  card: true
+  sources_any: [experiment_notes, meeting_notes]
+  say_contains_any: ["not ", "haven't", "hasn't", "yet", "planned"]
+  say_not_matches: ["\\bI (have|already) (run|ran|finished|completed)\\b"]
+real_only: [say_contains_any, say_not_matches]

@@ -1,0 +1,8 @@
+name: 07-small-talk
+dod: "7 — small talk produces no copilot card"
+transcript:
+  - { channel: them, speaker: David, text: "Morning everyone, how was your weekend?" }
+  - { channel: me, text: "Pretty good, went hiking." }
+  - { channel: them, speaker: Marcus, text: "Nice, the weather was great on Saturday." }
+expect:
+  card: false

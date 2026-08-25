@@ -1,0 +1,9 @@
+name: 09-next-step
+dod: "next-step request grounded in decisions/tasks"
+transcript:
+  - { channel: them, speaker: David, text: "Okay, so what's our next step on the eval?" }
+expect:
+  card: true
+  sources_any: [meeting_notes, experiment_notes]
+  say_contains_any: [five, "5", trial]
+real_only: [say_contains_any, sources_any]

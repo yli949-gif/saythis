@@ -1,0 +1,12 @@
+name: 08-answered-earlier
+dod: "conversation priority — question answered earlier in the meeting"
+transcript:
+  - { channel: them, speaker: David, text: "Why micro F1 and not macro?" }
+  - { channel: me, text: "Because several ideas have very low support, macro F1 would be too noisy." }
+  - { channel: them, speaker: David, text: "Right, that makes sense." }
+  - { channel: them, speaker: Marcus, text: "Sorry, I joined late — Ella, why micro F1 again?" }
+expect:
+  card: true
+  sources_any: ["(current meeting)", evaluation_plan, meeting_notes]
+  say_contains_any: [support, noisy, macro, aggregate]
+real_only: [say_contains_any]

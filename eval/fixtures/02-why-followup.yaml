@@ -1,0 +1,12 @@
+name: 02-why-followup
+dod: "2 — vague follow-up resolves the previous topic"
+transcript:
+  - { channel: them, speaker: David, text: "Looking at v3, Idea 12 is still pretty weak." }
+  - { channel: me, text: "Yes, it's at 0.68 right now." }
+  - { channel: them, speaker: David, text: "Why?" }
+expect:
+  card: true
+  resolved_contains_any: ["idea 12", "0.68", "weak"]
+  sources_any: [experiment_notes, evaluation_results, evaluation_plan]
+  say_contains_any: [support, unstable, instab, boundary, "idea 9", low]
+real_only: [say_contains_any]

@@ -1,0 +1,8 @@
+name: 10-exact-entity-code
+dod: "exact lexical entity in code/config retrieves correct file"
+transcript:
+  - { channel: them, speaker: David, text: "What did you set max_workers to in the eval pipeline?" }
+expect:
+  card: true
+  sources_any: [evaluate.py, config.json]
+  say_contains_any: ["8"]
